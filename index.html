@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/4a8974071f.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body class="bg-dark">
+
+  <!------nav bar------>
+  <nav class="navbar navbar-expand-lg bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="" height="45px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger" type="submit">Search</button>
+        </form>
+        <div class="ms-2">
+          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Log
+            In</button>
+          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign
+            Up</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Log In to Sachin Website</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" aria-describedby="emailHelp" id="email">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+            </div>
+            <button type="submit" class="btn btn-outline-primary" onclick="login()">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Sign up Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="signupModalLabel">Create a new account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="confirmpassword" class="form-control" id="exampleInputconfirmPassword1">
+            </div>
+            <button type="submit" class="btn btn-outline-primary">Create Account</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-----crousel-------->
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/images/1.jpg" class="d-block w-100" alt="..." height="400px">
+      </div>
+      <div class="carousel-item">
+        <img src="/images/2.jpg" class="d-block w-100" alt="..." height="400px">
+      </div>
+      <div class="carousel-item">
+        <img src="/images/3.jpg" class="d-block w-100" alt="..." height="400px">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<!------------week tasks container -------->
+  <div class="container">
+
+    <!---Week 1 tasks----->
+    <div class="row">
+      <div class="text-center text-bg-dark mt-4">
+        <h2>Week-1</h2>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-md-4">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="/images/day 1.png" class="card-img-top" alt="..." height="250px">
+          <div class="card-body bg-dark-subtle">
+            <h5 class="card-title">Time table</h5>
+            <p class="card-text"></p>
+            <a href="/week 1/day 1/timetable.html" class="btn btn-outline-dark">Click</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="/images/day 2.png" class="card-img-top" alt="..." height="250px">
+          <div class="card-body bg-dark-subtle">
+            <h5 class="card-title">Html+Css Design</h5>
+            <p class="card-text"></p>
+            <a href="/week 1/day2/web1.html" class="btn btn-outline-dark">Click</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="/images/day 3.png" class="card-img-top" alt="..." height="250px">
+          <div class="card-body bg-dark-subtle">
+            <h5 class="card-title">Bootstrap Design</h5>
+            <p class="card-text"></p>
+            <a href="/week 1/day3/boot.html" class="btn btn-outline-dark">Click</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="/images/day 4.png" class="card-img-top" alt="..." height="250px">
+          <div class="card-body bg-dark-subtle">
+            <h5 class="card-title">Bootstrap Design</h5>
+            <p class="card-text"></p>
+            <a href="/week 1/day4/boot2.html" class="btn btn-outline-dark">Click</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="/images/day 5.png" class="card-img-top" alt="..." height="250px">
+          <div class="card-body bg-dark-subtle">
+            <h5 class="card-title">Gallery</h5>
+            <p class="card-text"></p>
+            <a href="/week 1/day5/gallery.html" class="btn btn-outline-dark">Click</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------week 2------>
+    <div class="row">
+      <div class="text-center text-bg-dark mt-4">
+        <h2>Week-2</h2>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="/images/day 6.png" class="card-img-top" alt="..." height="250px">
+          <div class="card-body bg-dark-subtle">
+            <h5 class="card-title">Agree Disagree Button</h5>
+            <p class="card-text"></p>
+            <a href="/week 2/day6/agree.html" class="btn btn-outline-dark">Click</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="/images/day 7.png" class="card-img-top" alt="..." height="250px">
+          <div class="card-body bg-dark-subtle">
+            <h5 class="card-title">Calculator</h5>
+            <p class="card-text"></p>
+            <a href="/week 2/day7/calculator.html" class="btn btn-outline-dark">Click</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="/images/day 8.png" class="card-img-top" alt="..." height="250px">
+          <div class="card-body bg-dark-subtle">
+            <h5 class="card-title">Insert Row in Table</h5>
+            <p class="card-text"></p>
+            <a href="/week 2/day8/row.html" class="btn btn-outline-dark">Click</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="/images/day 9.png" class="card-img-top" alt="..." height="250px">
+          <div class="card-body bg-dark-subtle">
+            <h5 class="card-title">Registration Form</h5>
+            <p class="card-text"></p>
+            <a href="/week 2/day9/regform.html" class="btn btn-outline-dark">Click</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="/images/day 10.png" class="card-img-top" alt="..." height="250px">
+          <div class="card-body bg-dark-subtle">
+            <h5 class="card-title">Table</h5>
+            <p class="card-text"></p>
+            <a href="/week 2/day10/table.html" class="btn btn-outline-dark">Click</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------week 3------>
+    <div class="row">
+      <div class="text-center text-bg-dark mt-4">
+        <h2>Week-3</h2>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="/images/day 11.png" class="card-img-top" alt="..." height="250px">
+          <div class="card-body bg-dark-subtle">
+            <h5 class="card-title">Bill layout</h5>
+            <p class="card-text"></p>
+            <a href="/week 3/day11/bill.html" class="btn btn-outline-dark">Click</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="/images/day 12.png" class="card-img-top" alt="..." height="250px">
+          <div class="card-body bg-dark-subtle">
+            <h5 class="card-title">Listing data wih filter</h5>
+            <p class="card-text"></p>
+            <a href="/week 3/day12/listdata.html" class="btn btn-outline-dark">Click</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="/images/day 13.png" class="card-img-top" alt="..." height="250px">
+          <div class="card-body bg-dark-subtle">
+            <h5 class="card-title">Log In</h5>
+            <p class="card-text"></p>
+            <a href="/week 3/day13/login.html" class="btn btn-outline-dark">Click</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="/images/day 14.png" class="card-img-top" alt="..." height="250px">
+          <div class="card-body bg-dark-subtle">
+            <h5 class="card-title">Event function</h5>
+            <p class="card-text"></p>
+            <a href="/week 3/day14/event.html" class="btn btn-outline-dark">Click</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="/images/day 15.png" class="card-img-top" alt="..." height="250px">
+          <div class="card-body bg-dark-subtle">
+            <h5 class="card-title">New Reg. Form</h5>
+            <p class="card-text"></p>
+            <a href="/week 3/day15/newform.html" class="btn btn-outline-dark">Click</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!----footer---->
+  <footer>
+    <div class="copyright">
+      <p class="text-secondary">Copyright Sachin Raj.<i class="fa-solid fa-heart"></i></p>
+    </div>
+  </footer>
+<!------style------->
+  <style>
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      width: 140px;
+    }
+
+    nav ul li {
+      display: inline-block;
+      list-style: none;
+      margin: 10px 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      position: relative;
+    }
+
+    nav ul li a::after {
+      content: '';
+      width: 0;
+      height: 3px;
+      background: #ff004f;
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      transition: 0.5s;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    .copyright {
+      width: 100%;
+      text-align: center;
+      padding: 25px 0;
+      background: #262626;
+      font-weight: 300;
+      margin-top: 20px;
+    }
+
+    .copyright i {
+      color: #ff0048;
+    }
+  </style>
+
+
+<!-------script for login button----------->
+<script>       
+  function login(){
+      let master = [{email:'sachin@gmail.com',password:'123'},{email:'satyam@gmail.com',password:'456'},{email:'sachinraj3891@gmail.com',password:'789'}];
+       let emailid = document.getElementById('email').value; 
+       let pass = document.getElementById('password').value; 
+       for(obj of master){
+          if (emailid.toLowerCase() == obj.email && pass== obj.password){
+              alert("Login Successfully");
+              return;
+          }
+       }
+       alert("Invalid User and Password");
+  }
+</script>
+
+</body>
+
+</html>

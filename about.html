@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4a8974071f.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body class="bg-dark">
+
+ <!------nav bar------>   
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="" height="45px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="header">
+        <div class="container">
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi, I'm <span>Sachin </span><br>Raj from Delhi</h1>
+            </div>
+        </div>
+    </div> 
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, my name is Sachin and I am a student of Computer Science engineering. I am currently pursuing my degree from ABESIT in Ghaziabad, UP, India. I am passionate about exploring new technologies and solving real-world problems using my knowledge of computer science.
+    
+                        I have always been fascinated by the power of technology to transform lives, and I am constantly learning new skills and tools to stay up-to-date with the latest trends in the industry. I have completed courses in DBMS, DAA, DSA,...etc and I am proficient in C , Python.
+                        
+                        During my time at college, I have been actively involved in  extracurricular activities and projects. 
+                        
+                        As I am from Bihar, I am proud of my heritage and culture, and I believe that my background has shaped my values of hard work, perseverance, and empathy. In my free time, I enjoy to play chess, and I am always on the lookout for new challenges and opportunities to learn and grow.
+                        
+                        I am excited to see where my passion for computer science will take me in the future, and I am eager to contribute my skills to make a positive impact on the world.
+                        
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <!---<p class="tab-links"onclick="opentab('experience')">Experience</p>--->
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Building Android Apps</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>10th(2016-2017)</span><br>8 CGPA</li>
+                                <li><span>12th(2017-2019)</span><br>69.8%</li>
+                                <li><span>B.tech(2020-2024)</span><br>currently in 3rd yr.</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!---------services---------->
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>My web design process combines strategic thinking, creativity,
+                    and technical expertise to deliver websites that exceed client expectations.</p>
+                    <a href="#">Learn more</a> 
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>My user-centered design approach emphasizes empathy, collaboration,
+                    and constant iteration to deliver exceptional user experiences that meet business objectives.</p>
+                    <a href="#">Learn more</a> 
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>My approach to app design prioritizes user research,
+                    iterative prototyping, and seamless integration with back-end systems for optimal performance.</p>
+                    <a href="#">Learn more</a> 
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!----------portfoilio--------------->
+    <!-- <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    
+    </div> -->
+
+    <footer>
+        <div class="copyright">
+            <p class="text-secondary">Copyright Sachin Raj.<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </footer>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+    </script>   
+</body>
+</html>
